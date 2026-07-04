@@ -1,7 +1,7 @@
 data_cfg:
   dataset_name: CCPG
-  dataset_root: G:/Gait/DataSets/CCPG/Sil_Pose
-  dataset_partition: ./datasets/CCPG/CCPG.json
+  dataset_root: "your data root"
+  dataset_partition: "your json root"
   num_workers: 2
   data_in_use:
     - true   # 0_pose.pkl
@@ -13,7 +13,7 @@ evaluator_cfg:
   enable_float16: true
   restore_ckpt_strict: true
   restore_hint: 90000
-  save_name: CAR-Gait_CCPG_4070Ti_16G
+  save_name: CAR-Gait_CCPG_4070TiSuper
   eval_func: evaluate_CCPG
   metric: euc
   sampler:
@@ -96,7 +96,7 @@ trainer_cfg:
   restore_ckpt_strict: true
   restore_hint: 0
   save_iter: 10000
-  save_name: CAR-Gait_CCPG_4070Ti_16G
+  save_name: CAR-Gait_CCPG_4070TiSuper
   sync_BN: false
   total_iter: 160000
   sampler:
