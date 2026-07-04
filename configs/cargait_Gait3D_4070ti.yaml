@@ -1,8 +1,8 @@
 data_cfg:
   dataset_name: Gait3D
   # Root should contain ID/type/view/0_pose.pkl and ID/type/view/1_sil.pkl.
-  dataset_root: G:/Gait/DataSets/Gait3D/2D_sil_pose_pkls
-  dataset_partition: E:/Gait/Model/OpenGait-master/datasets/Gait3D/Gait3D.json
+  dataset_root: "your data root"
+  dataset_partition: "your json root"
   num_workers: 2
   data_in_use:
     - true   # 0_pose.pkl
@@ -14,7 +14,7 @@ evaluator_cfg:
   enable_float16: true
   restore_ckpt_strict: true
   restore_hint: 100000
-  save_name: CAR-Gait_Gait3D_4070Ti_16G
+  save_name: CAR-Gait_Gait3D_4070TiSuper
   eval_func: evaluate_Gait3D
   metric: euc
   sampler:
@@ -91,7 +91,7 @@ trainer_cfg:
   restore_ckpt_strict: true
   restore_hint: 0
   save_iter: 10000
-  save_name: CAR-Gait_Gait3D_4070Ti_16G
+  save_name: CAR-Gait_Gait3D_4070TiSuper
   sync_BN: false
   total_iter: 150000
   sampler:
