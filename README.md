@@ -13,7 +13,7 @@ CAP-Gait is a lightweight multimodal gait recognition model. It uses silhouettes
 - Supports CCPG, CASIA-B, SUSTech1K, and Gait3D in the OpenGait framework.
 - Uses standard gait retrieval evaluation with Euclidean distance.
 
-- ## Environment
+## Environment
 
 The code is based on OpenGait and PyTorch.
 
