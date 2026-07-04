@@ -1,7 +1,7 @@
 data_cfg:
   dataset_name: CASIA-B
-  dataset_root: E:/Gait/Datasets/CASIA-B/CASIA-B-Sil_Pose
-  dataset_partition: ./datasets/CASIA-B/CASIA-B.json
+  dataset_root: "your data root"
+  dataset_partition: "your json root"
   num_workers: 2
   data_in_use:
     - true   # 0_pose.pkl
@@ -13,7 +13,7 @@ evaluator_cfg:
   enable_float16: true
   restore_ckpt_strict: true
   restore_hint: 150000
-  save_name: CAR-Gait_CASIA-B_4070Ti_16G
+  save_name: CAR-Gait_CASIA-B_4070TiSuper
   eval_func: evaluate_indoor_dataset
   cross_view_gallery: false
   metric: euc
@@ -92,7 +92,7 @@ trainer_cfg:
   restore_ckpt_strict: true
   restore_hint: 0
   save_iter: 10000
-  save_name: CAR-Gait_CASIA-B_4070Ti_16G
+  save_name: CAR-Gait_CASIA-B_4070TiSuper
   sync_BN: false
   total_iter: 100000
   sampler:
